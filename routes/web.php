@@ -75,8 +75,10 @@ Route::get('/tasks/{id}', function($id) use ($tasks){
 })->name('tasks.show');
 
 
-
-
+ 
+Route::get('dbcon', function(){
+    return view('dbcon');
+});
 
 
 
